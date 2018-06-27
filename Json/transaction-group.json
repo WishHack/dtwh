@@ -1,0 +1,427 @@
+// Transaction Group
+{
+    "transaction" : {
+        "app_type" : NumberInt(0), 
+        "app_type_name" : "Wish", 
+        "balance_due" : NumberInt(0), 
+        "billing_details" : {
+            "avs_postal_check_response" : "Yes", 
+            "avs_street_check_response" : "Yes", 
+            "billing_address" : {
+                "city" : "National City", 
+                "country" : "美国", 
+                "country_code" : "US", 
+                "id" : null, 
+                "name" : "Hugo Alvarez", 
+                "phone_number" : "6196160901", 
+                "provider" : null, 
+                "ship_note" : null, 
+                "state" : "California", 
+                "state_abbreviation" : "CA", 
+                "street_address1" : "2420 D Ave ", 
+                "street_address2" : "8", 
+                "tracking_id" : null, 
+                "tracking_url" : null, 
+                "zipcode" : "91950"
+            }, 
+            "card_type" : "MasterCard", 
+            "country_of_issuance" : "US", 
+            "expiry_month" : NumberInt(10), 
+            "expiry_year" : NumberInt(2019), 
+            "first_6_digits" : null, 
+            "friendly_name" : null, 
+            "id" : "5a82701268b0c520d08a08c2", 
+            "identity_number" : null, 
+            "last_4_digits" : "6065", 
+            "name" : "Hugo Alvarez", 
+            "payment_type" : NumberInt(3), 
+            "token" : null
+        }, 
+        "cash" : NumberInt(0), 
+        "chargeback" : false, 
+        "client" : "Ios_App", 
+        "credit" : NumberInt(0), 
+        "currency_code" : "USD", 
+        "discounts" : [
+
+        ], 
+        "fbw_warehouse_name" : null, 
+        "flat_rate_shipping" : null, 
+        "funds" : NumberInt(0), 
+        "gwallet_offer" : NumberInt(0), 
+        "id" : "5a87d16c5ec4174d6be7cbb9", 
+        "ip_address" : "172.58.145.53", 
+        "is_gift" : false, 
+        "is_new_refund" : true, 
+        "items" : [
+            {
+                "c_shipping" : NumberInt(4), 
+                "can_non_internal_refund" : true, 
+                "can_return" : false, 
+                "can_use_return_center" : true, 
+                "color" : null, 
+                "credit" : NumberInt(0), 
+                "hide_last_mile_tracking" : false, 
+                "image_url" : "https://contestimg.wish.com/api/webimage/5a256bcd5dcd022f42a1612e-normal.jpg", 
+                "is_c2c" : false, 
+                "is_fbw" : false, 
+                "is_free_gift" : false, 
+                "is_free_sample" : false, 
+                "is_hidden_mystery_box_item" : null, 
+                "is_mystery_box" : false, 
+                "is_wish_express" : false, 
+                "localized_credit" : {
+                    "currency_code" : "USD", 
+                    "localized_value" : NumberInt(0), 
+                    "symbol" : "$", 
+                    "table_id" : "5a87c4f690b8a6c15a6a57d8"
+                }, 
+                "localized_group_buy_rebate_amount" : null, 
+                "localized_price" : {
+                    "currency_code" : "USD", 
+                    "localized_value" : NumberInt(0), 
+                    "symbol" : "$", 
+                    "table_id" : "5a87c4f690b8a6c15a6a57d8"
+                }, 
+                "localized_shipping" : {
+                    "currency_code" : "USD", 
+                    "localized_value" : NumberInt(4), 
+                    "symbol" : "$", 
+                    "table_id" : "5a87c4f690b8a6c15a6a57d8"
+                }, 
+                "manufacturer_id" : "WCYI0001164A1002", 
+                "max_delivery_time" : NumberInt(18),    
+                "max_fulfillment_time" : NumberInt(3), 
+                "max_ship_time" : NumberInt(18), 
+                "max_shipping_time" : NumberInt(18), 
+                "max_shipping_time_shown" : "March 07, 2018", 
+                "merchant_display_name" : "chengyou", 
+                "merchant_id" : "556707d97e300919e3eb3969", 
+                "merchant_is_strategic" : false, 
+                "merchant_is_wish_owned" : false, 
+                "merchant_name" : "chengyou", 
+                "merchant_price" : 1.98, 
+                "merchant_shipping" : NumberInt(1), 
+                "min_delivery_time" : NumberInt(7), 
+                "min_fulfillment_time" : NumberInt(1), 
+                "min_ship_time" : NumberInt(7), 
+                "min_shipping_time" : NumberInt(7), 
+                "min_shipping_time_shown" : "February 24, 2018", 
+                "name" : "CHENGYOU Mens Sexy Toy Silicone Vibration Reusable Spike Condom WCYI0001164A1", 
+                "original_price" : NumberInt(2), 
+                "original_shipping" : NumberInt(1), 
+                "parent_mystery_box_id" : null, 
+                "price" : NumberInt(0), 
+                "product_id" : "5a256bcd5dcd022f42a1612e", 
+                "quantity" : NumberInt(1), 
+                "reason" : null, 
+                "receive_time" : null, 
+                "recipient_id" : "None", 
+                "sequence_id" : NumberInt(1), 
+                "shipped_date" : "02-19-2018", 
+                "shipped_days_ago" : NumberInt(16), 
+                "shipping" : NumberInt(1), 
+                "shipping_details" : {
+                    "city" : "Pascaguola", 
+                    "country" : "美国", 
+                    "country_code" : "US", 
+                    "id" : null, 
+                    "name" : "Hugo Alvarez", 
+                    "phone_number" : "6196160901", 
+                    "provider" : "Yanwen", 
+                    "ship_note" : null, 
+                    "state" : "Mississippi", 
+                    "state_abbreviation" : "MS", 
+                    "street_address1" : "1010 12 th St ", 
+                    "street_address2" : null, 
+                    "tracking_id" : "UD306419920CN", 
+                    "tracking_url" : "http://www.yw56.com.cn/", 
+                    "zipcode" : "39567"
+                }, 
+                "size" : "1", 
+                "size_id" : "1", 
+                "state" : "SHIPPED", 
+                "tracking_info" : {
+                    "checkpoints" : [
+                        {
+                            "aftership_state" : NumberInt(12), 
+                            "city" : null, 
+                            "country" : null, 
+                            "country_name" : "", 
+                            "date" : "2018年2月19日", 
+                            "is_translated" : false, 
+                            "latitude" : null, 
+                            "longitude" : null, 
+                            "message" : "The item information was created by the seller.", 
+                            "state" : null, 
+                            "status" : "Tracking Info Received", 
+                            "zipcode" : null
+                        }, 
+                        {
+                            "aftership_state" : NumberInt(5), 
+                            "city" : null, 
+                            "country" : null, 
+                            "country_name" : "", 
+                            "date" : "2018年2月19日", 
+                            "is_translated" : false, 
+                            "latitude" : null, 
+                            "longitude" : null, 
+                            "message" : "Yanwen Acceptance.", 
+                            "state" : null, 
+                            "status" : "运输中", 
+                            "zipcode" : null
+                        }, 
+                        {
+                            "aftership_state" : NumberInt(5), 
+                            "city" : null, 
+                            "country" : null, 
+                            "country_name" : "", 
+                            "date" : "2018年2月19日", 
+                            "is_translated" : false, 
+                            "latitude" : null, 
+                            "longitude" : null, 
+                            "message" : "Process completed in yanwen sorting center.", 
+                            "state" : null, 
+                            "status" : "运输中", 
+                            "zipcode" : null
+                        }, 
+                        {
+                            "aftership_state" : NumberInt(5), 
+                            "city" : null, 
+                            "country" : null, 
+                            "country_name" : "", 
+                            "date" : "2018年2月20日", 
+                            "is_translated" : false, 
+                            "latitude" : null, 
+                            "longitude" : null, 
+                            "message" : "Despatched from yanwen sorting center.", 
+                            "state" : null, 
+                            "status" : "运输中", 
+                            "zipcode" : null
+                        }, 
+                        {
+                            "aftership_state" : NumberInt(5), 
+                            "city" : null, 
+                            "country" : null, 
+                            "country_name" : "江苏苏州收寄中心", 
+                            "date" : "2018年2月23日", 
+                            "is_translated" : true, 
+                            "latitude" : null, 
+                            "longitude" : null, 
+                            "message" : "Have been picked up", 
+                            "state" : null, 
+                            "status" : "运输中", 
+                            "zipcode" : null
+                        }, 
+                        {
+                            "aftership_state" : NumberInt(5), 
+                            "city" : null, 
+                            "country" : null, 
+                            "country_name" : "江苏苏州收寄中心", 
+                            "date" : "2018年2月23日", 
+                            "is_translated" : true, 
+                            "latitude" : null, 
+                            "longitude" : null, 
+                            "message" : "Have been dispatched", 
+                            "state" : null, 
+                            "status" : "运输中", 
+                            "zipcode" : null
+                        }, 
+                        {
+                            "aftership_state" : NumberInt(5), 
+                            "city" : null, 
+                            "country" : null, 
+                            "country_name" : "", 
+                            "date" : "2018年2月23日", 
+                            "is_translated" : false, 
+                            "latitude" : null, 
+                            "longitude" : null, 
+                            "message" : "物流订单已创建(WISH邮平台)", 
+                            "state" : null, 
+                            "status" : "运输中", 
+                            "zipcode" : null
+                        }, 
+                        {
+                            "aftership_state" : NumberInt(5), 
+                            "city" : null, 
+                            "country" : null, 
+                            "country_name" : "江苏苏州收寄中心", 
+                            "date" : "2018年2月24日", 
+                            "is_translated" : false, 
+                            "latitude" : null, 
+                            "longitude" : null, 
+                            "message" : "已离开，下一站处理中心", 
+                            "state" : null, 
+                            "status" : "运输中", 
+                            "zipcode" : null
+                        }, 
+                        {
+                            "aftership_state" : NumberInt(5), 
+                            "city" : null, 
+                            "country" : null, 
+                            "country_name" : "", 
+                            "date" : "2018年2月25日", 
+                            "is_translated" : false, 
+                            "latitude" : null, 
+                            "longitude" : null, 
+                            "message" : "计划交航", 
+                            "state" : null, 
+                            "status" : "运输中", 
+                            "zipcode" : null
+                        }
+                    ], 
+                    "days_since_update" : NumberInt(1), 
+                    "exp_delivery_time" : null, 
+                    "is_validated" : true, 
+                    "last_update" : "2018年3月6日", 
+                    "provider_name" : "Yanwen", 
+                    "provider_site" : "http://www.yw56.com.cn/", 
+                    "status" : "运输中", 
+                    "tracking_hash" : null, 
+                    "tracking_id" : "UD306419920CN"
+                }, 
+                "variation_id" : "5a256bda647e1f49cb0c9c11"
+            }
+        ], 
+        "localized_balance_due" : {
+            "currency_code" : "USD", 
+            "localized_value" : NumberInt(0), 
+            "symbol" : "$", 
+            "table_id" : "5a87c4f690b8a6c15a6a57d8"
+        }, 
+        "localized_cash" : {
+            "currency_code" : "USD", 
+            "localized_value" : NumberInt(0), 
+            "symbol" : "$", 
+            "table_id" : "5a87c4f690b8a6c15a6a57d8"
+        }, 
+        "localized_credit" : {
+            "currency_code" : "USD", 
+            "localized_value" : NumberInt(0), 
+            "symbol" : "$", 
+            "table_id" : "5a87c4f690b8a6c15a6a57d8"
+        }, 
+        "localized_discounts" : [
+
+        ], 
+        "localized_funds" : {
+            "currency_code" : "USD", 
+            "localized_value" : NumberInt(0), 
+            "symbol" : "$", 
+            "table_id" : "5a87c4f690b8a6c15a6a57d8"
+        }, 
+        "localized_gwallet_offer" : {
+            "currency_code" : "USD", 
+            "localized_value" : NumberInt(0), 
+            "symbol" : "$", 
+            "table_id" : "5a87c4f690b8a6c15a6a57d8"
+        }, 
+        "localized_shipping" : {
+            "currency_code" : "USD", 
+            "localized_value" : NumberInt(4), 
+            "symbol" : "$", 
+            "table_id" : "5a87c4f690b8a6c15a6a57d8"
+        }, 
+        "localized_subtotal" : {
+            "currency_code" : "USD", 
+            "localized_value" : NumberInt(0), 
+            "symbol" : "$", 
+            "table_id" : "5a87c4f690b8a6c15a6a57d8"
+        }, 
+        "localized_tax" : [
+
+        ], 
+        "localized_total" : {
+            "currency_code" : "USD", 
+            "localized_value" : NumberInt(4), 
+            "symbol" : "$", 
+            "table_id" : "5a87c4f690b8a6c15a6a57d8"
+        }, 
+        "max_shipping_time" : NumberInt(18), 
+        "min_shipping_time" : NumberInt(7), 
+        "mtid" : "5a87d16d1eea3e14b6bdb649", 
+        "notes" : "Signifyd Score 592", 
+        "payment_id" : "ch_1BwPZh2GqC4hODLtTcSQsXQe", 
+        "payment_name" : "Credit Card", 
+        "payment_type" : "Credit Card (Stripe)", 
+        "payment_type_number" : NumberInt(3), 
+        "reason" : null, 
+        "refund_in_form_of_credit" : false, 
+        "refund_items" : [
+
+        ], 
+        "shipping" : NumberInt(4), 
+        "shipping_details" : {
+            "city" : "Pascaguola", 
+            "country" : "美国", 
+            "country_code" : "US", 
+            "id" : null, 
+            "name" : "Hugo Alvarez", 
+            "phone_number" : "6196160901", 
+            "provider" : "Yanwen", 
+            "ship_note" : null, 
+            "state" : "Mississippi", 
+            "state_abbreviation" : "MS", 
+            "street_address1" : "1010 12 th St ", 
+            "street_address2" : null, 
+            "tracking_id" : "UD306419920CN", 
+            "tracking_url" : "http://www.yw56.com.cn/", 
+            "zipcode" : "39567"
+        }, 
+        "signifyd_case_id" : NumberInt(568055489), 
+        "state" : "SHIPPED", 
+        "subtotal" : NumberInt(0), 
+        "tax" : [
+
+        ], 
+        "ticket_id" : null, 
+        "time" : "02-17-2018 06:53 UTC", 
+        "total" : NumberInt(4), 
+        "transaction_summary" : [
+            {
+                "localized_value" : {
+                    "currency_code" : "USD", 
+                    "localized_value" : NumberInt(0), 
+                    "symbol" : "$", 
+                    "table_id" : "5a87c4f690b8a6c15a6a57d8"
+                }, 
+                "name" : "Item Total", 
+                "type" : NumberInt(1), 
+                "value" : NumberInt(0)
+            }, 
+            {
+                "localized_value" : {
+                    "currency_code" : "USD", 
+                    "localized_value" : NumberInt(4), 
+                    "symbol" : "$", 
+                    "table_id" : "5a87c4f690b8a6c15a6a57d8"
+                }, 
+                "name" : "配送", 
+                "type" : NumberInt(3), 
+                "value" : NumberInt(4)
+            }, 
+            {
+                "localized_value" : {
+                    "currency_code" : "USD", 
+                    "localized_value" : NumberInt(4), 
+                    "symbol" : "$", 
+                    "table_id" : "5a87c4f690b8a6c15a6a57d8"
+                }, 
+                "name" : "订单总数", 
+                "type" : NumberInt(4), 
+                "value" : NumberInt(4)
+            }
+        ], 
+        "use_return_center" : true, 
+        "user_can_cancel" : false, 
+        "user_can_edit_address" : false, 
+        "user_id" : "5a80070f53b932b83d3a4222", 
+        "user_info" : {
+            "blocked" : false, 
+            "bounced" : NumberInt(0), 
+            "email" : "chemaruizelloco@gmail.com", 
+            "login_method" : "Google+", 
+            "verified" : true
+        }
+    }
+}

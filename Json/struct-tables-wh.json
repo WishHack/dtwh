@@ -1,0 +1,117 @@
+// Structure Tables - Analysis Model
+// Fields extracted from MongoDB
+[{
+	"table":"DimProduct",
+	"fields":{
+	=>	"manufacturer_id" : "WCYI0001164A1002", 
+    =>  "max_delivery_time" : NumberInt(18),    
+    =>  "max_fulfillment_time" : NumberInt(3), 
+    =>  "max_ship_time" : NumberInt(18),
+	=>	"min_delivery_time" : NumberInt(7), 
+	=>	"min_fulfillment_time" : NumberInt(1), 
+	=>	"min_ship_time" : NumberInt(7),         
+	=>	"price" : NumberInt(0), 
+	WR	"product_id" : "5a256bcd5dcd022f42a1612e",
+	WR	"product_name" : "TBD",
+    =>  "is_c2c" : false, 
+    =>  "is_fbw" : false, 
+    =>  "is_free_gift" : false, 
+    =>  "is_free_sample" : false, 
+    =>  "is_hidden_mystery_box_item" : null, 
+    =>  "is_mystery_box" : false, 
+    =>  "is_wish_express" : false
+	},
+	"table":"DimMerchant",
+	"fields":{
+	OD	"merchant_id" : "556707d97e300919e3eb3969", 
+    =>  "merchant_full_name" : "CHENGYOU Mens Sexy Toy Silicone Vibration Reusable Spike Condom WCYI0001164A1"
+	=>	"merchant_short_name" : "chengyou",
+	=>	"merchant_display_name" : "chengyou", 
+	=>	"merchant_is_strategic" : false, 
+	=>	"merchant_is_wish_owned" : false
+	},
+	"table":"DimCustomer",
+	"fields":{
+    OD  "user_id" : "5a80070f53b932b83d3a4222", 
+	WU	"full_name" : "Hugo Alvarez", 
+	WU	"short_name": "Hugo",
+    OD	"transaction_billing_details_email" : "chemaruizelloco@gmail.com", 
+	OD	"transaction_billing_details_billing_address_city" : "National City", 
+	OD	"transaction_billing_details_billing_address_country" : "美国", 
+	OD	"transaction_billing_details_billing_address_country_code" : "US", 
+	OD	"transaction_billing_details_billing_address_phone_number" : "6196160901", 
+	OD	"transaction_billing_details_billing_address_state" : "California", 
+	OD	"transaction_billing_details_billing_address_state_abbreviation" : "CA", 
+	OD	"transaction_billing_details_billing_address_street_address1" : "2420 D Ave ", 
+	OD	"transaction_billing_details_billing_address_street_address2" : "8", 
+	OD	"transaction_billing_details_billing_address_zipcode" : "91950",
+	WU	"has_profile_pic": false,
+	WU	"is_wish_star": false,
+	WU	"is_following": false,
+	WU	"is_facebook_user":false,
+	WU	"is temporary":false
+	},
+	"table":"FactSales",
+	"fields":{
+    OD  "user_id" : "5a80070f53b932b83d3a4222",
+    WR  "product_id" : "5a256bcd5dcd022f42a1612e", 
+    OD  "merchant_id" : "556707d97e300919e3eb3969",
+    OD  "transaction_id": ,
+    OD	"time" : "02-17-2018 06:53 UTC", 
+    OD  "transaction_is_gift" : false, 
+    OD  "transaction_is_new_refund" : true,
+    OD  "payment_id" : "ch_1BwPZh2GqC4hODLtTcSQsXQe", 
+    OD  "payment_name" : "Credit Card", 
+    OD  "payment_type" : "Credit Card (Stripe)", 
+    OD  "payment_type_number" : NumberInt(3),
+	OD	"subtotal" : NumberInt(4), 
+    =>  "taxes" : NumberInt(4),
+    OD  "total" : NumberInt(4)
+	},
+	"table":"ProductReviewAttr",
+	"fields":{
+	WR	"review_id" : "TBD",
+	WR	"product_id" : "TBD",
+	WR	"rating" : "TBD",
+	WR	"date_review" : "TBD",
+	WR	"upvote_count" : "TBD",
+	WR	"user_id" : "TBD",
+	WR	"transaction_id" : "TBD",
+	},
+	"table":"ProductTagAttr",
+	"fields":{
+	WR	"product_id" : "TBD",
+		"product_tag" : "TBD"
+	},
+	"table":"WhisListAttr",
+	"fields":{
+	WL	"user_id" : "TBD",
+	WL 	"list_id" : "TBD",
+	WL 	"list_name" : "TBD",
+	WL 	"private" : "TBD",
+	WL 	"item_id": "TBD"
+	},
+	"table":"WishListDetailAttr",
+	"fields":{
+	WD	"item_id" : "TBD",
+	WD	"item_name" : "TBD",
+	WD	"seller_price" : "TBD", 
+	WC	"cat_id" : "TBD",
+	WC	"parent_cat_id" : "TBD",
+	WC	"is_parent" : "TBD",
+	WC	"category_name" : "TBD",
+	WC	"category_level" : "TBD"
+	}	
+
+}]
+
+
+CODIGOS:
+------------------------------------------
+WU: WISHUSER
+WD: WISHLIST_DETAIL
+WC: WISHCATEGORY
+WL: WISHLIST
+WR: WISHREVIEW
+OD: ORDER_DETAILS
+=>: 'NA'

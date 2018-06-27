@@ -1,0 +1,7 @@
+itemid,
+itemname,
+seller_price,
+cat_ids,
+main_image,
+extra_image_list,
+item_desc
