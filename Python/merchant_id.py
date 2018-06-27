@@ -31,14 +31,14 @@ def cnn_dw():
     cursor = conn.cursor()
 
     strSQL = """
-        SELECT
-            g.merchant_id as merchant_id,
-            g.openid as open_id,
+        SELECT    
+            g.merchant_id as merchant_id,    
+            g.openid as open_id,    
             g.transaction_id as transaction_id,
             g.transaction_ip_address as transaction_ip_address,
             g.transaction_user_info.email as transaction_email,
-            g.transaction_user_info.login_method as transaction_login_method,
-            g.transaction_user_info.verified as transaction_verified,
+            g.transaction_user_info.login_method as transaction_login_method,    
+            g.transaction_user_info.verified as transaction_verified,    
             g.mtid as mtid,
             g.shipping_details.city as shipping_city,
             g.shipping_details.country as shipping_country,
@@ -49,33 +49,33 @@ def cnn_dw():
             g.shipping_details.state_abbreviation as shipping_state_abbreviation,
             g.shipping_details.street_address1 as shipping_address1,
             g.shipping_details.street_address2 as shipping_address2,
-            g.shipping_details.zipcode as shipping_zipcode,
-            g.time as transaction_time,
+            g.shipping_details.zipcode as shipping_zipcode,    
+            g.time as transaction_time,    
             g.subtotal as transaction_subtotal,
-            g.total as transaction_total,
+            g.total as transaction_total,    
             g.user_id as user_id,
-            d.product_id as product_id,
+            d.product_id as product_id,     
             d.image_url as image_url,
-            d.is_wish_express as is_wish_express,
+            d.is_wish_express as is_wish_express,     
             d.merchant_display_name as merchant_display_name,
-            d.merchant_name as merchant_name,
+            d.merchant_id as other_merchant_id,     
+            d.merchant_name as merchant_name,     
             d.merchant_price as merchant_price,
-            d.name as product_name,
+            d.name as product_name,     
             d.original_price as original_price,
-            d.original_shipping as original_shipping,
-            d.quantity as quantity,
+            d.original_shipping as original_shipping,     
+            d.quantity as quantity,     
             d.shipped_date as shipped_date,
-            d.size as size,
-            d.variation_id as variation_id,
-            case when d.merchant_id = g.merchant_id
-             then 1 else 0
-             end as is_my_product
+            d.size as size,     
+            d.variation_id as variation_id,     
+            case when d.merchant_id = g.merchant_id then 1 else 0 end as is_my_product
         FROM
             wishhack.orderDetails_full_23062018_stg g
-        LATERAL VIEW
+            LATERAL VIEW
             explode(transaction_items) t as d
-        WHERE
+        WHERE    
             g.merchant_id = '56698779866093430fd111b0'
+
     """
 
     cursor.execute(strSQL)
@@ -91,7 +91,7 @@ def cnn_dw():
                      'shipping_name', 'shipping_phone_number', 'shipping_state', 'shipping_state_abbreviation',
                      'shipping_address1', 'shipping_address2', 'shipping_zipcode', 'transaction_time',
                      'transaction_subtotal', 'transaction_total', 'user_id', 'product_id', 'image_url',
-                     'is_wish_express', 'merchant_display_name', 'merchant_name', 'merchant_price', 'product_name',
+                     'is_wish_express', 'merchant_display_name', 'other_merchant_id','merchant_name', 'merchant_price', 'product_name',
                      'original_price', 'original_shipping', 'quantity', 'shipped_date', 'size', 'variation_id',
                      'is_my_product']
 
@@ -125,16 +125,17 @@ def cnn_dw():
                              'image_url': each_row[23],
                              'is_wish_express': each_row[24],
                              'merchant_display_name': each_row[25],
-                             'merchant_name': each_row[26],
-                             'merchant_price': each_row[27],
-                             'product_name': each_row[28],
-                             'original_price': each_row[29],
-                             'original_shipping': each_row[30],
-                             'quantity': each_row[31],
-                             'shipped_date': each_row[32],
-                             'size': each_row[33],
-                             'variation_id': each_row[34],
-                             'is_my_product': each_row[35]
+                             'other_merchant_id': each_row[26], 
+                             'merchant_name': each_row[27],
+                             'merchant_price': each_row[28],
+                             'product_name': each_row[29],
+                             'original_price': each_row[30],
+                             'original_shipping': each_row[31],
+                             'quantity': each_row[32],
+                             'shipped_date': each_row[33],
+                             'size': each_row[34],
+                             'variation_id': each_row[35],
+                             'is_my_product': each_row[36]
                              })
             rows += 1
             print(each_row)
