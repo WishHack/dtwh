@@ -51,7 +51,6 @@ def cnn_dw():
             writer.writerow({
                              'user_id': each_row[0]
                              })
-            # print(i)
             rows += 1
             print(each_row)
 
